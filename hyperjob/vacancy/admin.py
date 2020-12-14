@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import Vacancy
 
-# Register your models here.
+
+class VacancyAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Vacancy, VacancyAdmin)
